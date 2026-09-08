@@ -20,5 +20,5 @@ water_needed = round((user_weight * 30) / 1000, 1)
 
 print(f"Привет, {user_name}! Я FitLife, давай начнём!")
 
-print(f"ваш возраст: {user_age} лет, ваш ИМТ: {bmi}, норма воды: {water_needed} мл.")
+print(f"ваш возраст: {user_age}, ваш ИМТ: {bmi}, норма воды: {water_needed}.")
 print("Расчёт окончен. Будьте здоровы!")
