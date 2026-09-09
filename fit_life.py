@@ -4,7 +4,7 @@ import sys
 sys.stdout.reconfigure(encoding="utf-8")
 
 # while True - делает цикл бесконечным
-# Про strip я узнал от нейронки, он отрезает все пробелы 
+# Про strip я узнал от нейронки, он отрезает все пробелы
 # title делает каждую первую букву заглавной (нейронка)
 # break завершает цикл
 while True:
@@ -18,7 +18,7 @@ while True:
 # while True - делает цикл бесконечным
 # isdigit я узнал от нейронки, проверяет цифры ли это.
 # break завершает цикл
-while True:       
+while True:
     user_age = input("Сколько вам лет? ")
     if user_age.isdigit():
         user_age = int(user_age)
@@ -60,8 +60,8 @@ elif bmi < 30:
 else:
     bmi_comment = "Ожирение"
 
-WATER_PER_KG = 30 
-ML_IN_LITER = 1000 
+WATER_PER_KG = 30
+ML_IN_LITER = 1000
 
 water_needed = round((user_weight * 30) / 1000, 1)
 
