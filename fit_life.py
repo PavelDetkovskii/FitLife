@@ -7,6 +7,9 @@ sys.stdout.reconfigure(encoding="utf-8")
 # Про strip я узнал от нейронки, он отрезает все пробелы
 # title делает каждую первую букву заглавной (нейронка)
 # break завершает цикл
+WATER_PER_KG = 30
+ML_IN_LITER = 1000
+
 while True:
     user_name = input("Как тебя зовут? ")
     if user_name.strip():
@@ -60,13 +63,10 @@ elif bmi < 30:
 else:
     bmi_comment = "Ожирение"
 
-WATER_PER_KG = 30
-ML_IN_LITER = 1000
-
-water_needed = round((user_weight * 30) / 1000, 1)
+water_needed = round((user_weight * WATER_PER_KG) / ML_IN_LITER, 1)
 
 print(f"Привет, {user_name}! Я FitLife, давай начнём!")
 print(f"ваш возраст: {user_age} лет")
-print(f"ваш ИМТ: {bmi}")
+print(f"ваш ИМТ: {bmi} - {bmi_comment}")
 print(f"норма воды: {water_needed} мл.")
 print("Расчёт окончен. Будьте здоровы!")
